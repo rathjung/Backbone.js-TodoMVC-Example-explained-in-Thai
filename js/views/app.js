@@ -107,7 +107,7 @@ var app = app || {};
 					remaining: remaining
 				}));
 
-				// ส่วน filter ตรง footer ถ้าอยู้หน้าไหนให้เพิ่ม class 'active' เข้าไปใน <a> นั้น
+				// ส่วน filter ตรง footer ถ้าอยู่หน้าไหนให้เพิ่ม class 'active' เข้าไปใน <a> นั้น
 				this.$('.filters li a')
 					.removeClass('selected')
 					.filter('[href="#/' + (app.TodoFilter || '') + '"]')
@@ -176,7 +176,7 @@ var app = app || {};
 		// ถ้าพิมพ์ใน element ที่มี classs '.new-todo' (ตัว text input หลัก) ให้รัน 'createOnEnter' method
 		// createOnEnter --> เมื่อกด enter --> สร้าง model ใหม่ โดยใช้ attribute จาก newAttributes method
 		createOnEnter: function (e) {
-			// .which เป็น jQuery event object จะได้ค่ามาเป็นรหัาปุ่มที่กดไป เลยเอามาเช็คว่าเป็นปุ่ม enter หรือเปล่า
+			// .which เป็น jQuery event object จะได้ค่ามาเป็นรหัสปุ่มที่กดไป เลยเอามาเช็คว่าเป็นปุ่ม enter หรือเปล่า
 			// และค่าของ input หลัง trim แล้วต้องไม่ว่าง
 			if (e.which === ENTER_KEY && this.$input.val().trim()) {
 				// สร้าง model ใหม่

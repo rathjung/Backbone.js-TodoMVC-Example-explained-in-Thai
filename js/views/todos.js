@@ -86,7 +86,7 @@ var app = app || {};
 			// ถ้า model นี้ completed: true --> ให้ดูว่าอยู่หน้า active หรือเปล่า
 			// ถ้าอยู่หน้า active --> return true (hide), ถ้าไม่อยู่ --> return false (show)
 
-			// ถ้า model นี้ completed: false --> ให้ดูว่าอยู้หน้า completed หรือเปล่า
+			// ถ้า model นี้ completed: false --> ให้ดูว่าอยู่หน้า completed หรือเปล่า
 			// ถ้าอยู่หน้า complete --> return true (hide), ถ้าไม่อยู่ --> return false (show)
 
 			return this.model.get('completed') ?

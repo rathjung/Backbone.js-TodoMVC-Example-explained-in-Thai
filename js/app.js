@@ -7,6 +7,6 @@ var ESC_KEY = 27;
 $(function () {
 	'use strict';
 
-	// เริ้ม app ด้วยการ new AppView object ขึ้นมา
+	// เริ่ม app ด้วยการ new AppView object ขึ้นมา
 	new app.AppView();
 });

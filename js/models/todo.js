@@ -22,7 +22,7 @@ var app = app || {};
 		},
 
 		// method สำหรับ toggle ค่าของ completed attribute
-		// เวลาใส่ method แบบนี้จะเป็น method ของ Todo.prototype
+		// เวลาใส่ method แบบนี้จะเป็น method ของ Todo.prototype (object เข้าถึงได้ แต่ไม่ใช่ method ของ object)
 		toggle: function () {
 			this.save({
 				completed: !this.get('completed')
